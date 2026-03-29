@@ -1,0 +1,89 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #ffffff;
+  background-color: #141414; /* 👈 Netflix-style dark */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* PREVENT HORIZONTAL SCROLL */
+html, body {
+  overflow-x: hidden;
+}
+
+/* BODY */
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* ROOT APP LAYOUT */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* LINKS */
+a {
+  font-weight: 500;
+  color: #e50914;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f40612;
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* BUTTON RESET (IMPORTANT FIX 🔥) */
+button {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* OPTIONAL CONTAINER (USEFUL) */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* SCROLLBAR (OPTIONAL BUT COOL 😎) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
